@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MONDPHDemoApp"
+             x:Class="MONDPHDemoApp.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Image Source="background.jpg" Aspect="AspectFill"/>
+        </Grid>
+        <Grid Grid.Row="1" BackgroundColor="White" Padding="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="20"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="30"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Label Text="Bryan Garcia" FontSize="16" FontAttributes="Bold" TextColor="DarkGray"/>
+                <Label Grid.Row="1" VerticalOptions="Start" Text="Malabon, Metro Manila" FontAttributes="Bold" FontSize="14" TextColor="Gray"/>
+                <BoxView Grid.Column="1" Grid.RowSpan="2" Margin="0,10" BackgroundColor="Gray" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <BoxView Grid.Column="3" Grid.RowSpan="2" Margin="0,10" BackgroundColor="Gray" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            </Grid>
+            <Label Grid.Row="1" VerticalOptions="Start" Text="Hey Heathens, How many of you have guns ? If you were asked to give them away will you do it ?? What made you aquire one in the first place ??" FontSize="12" FontAttributes="Bold" TextColor="Gray"/>
+            <Label Grid.Row="2" Text="Read More" FontSize="12" TextColor="DarkGray"/>
+        </Grid>
+    </Grid>
+</ContentPage>
