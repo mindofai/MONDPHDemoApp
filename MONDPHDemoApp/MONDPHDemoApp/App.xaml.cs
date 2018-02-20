@@ -13,7 +13,7 @@ namespace MONDPHDemoApp
         {
             InitializeComponent();
 
-            MainPage = new MONDPHDemoApp.MainPage();
+            MainPage = new NavigationPage(new LoginPage());
         }
 
         protected override void OnStart()

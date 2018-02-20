@@ -7,9 +7,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Grid>
-            <Image Source="background.jpg" Aspect="AspectFill"/>
+            <Image Source="background" Aspect="AspectFill"/>
         </Grid>
         <Grid Grid.Row="1" BackgroundColor="White" Padding="30">
             <Grid.RowDefinitions>
@@ -36,6 +37,10 @@
             </Grid>
             <Label Grid.Row="1" VerticalOptions="Start" Text="Hey Heathens, How many of you have guns ? If you were asked to give them away will you do it ?? What made you aquire one in the first place ??" FontSize="12" FontAttributes="Bold" TextColor="Gray"/>
             <Label Grid.Row="2" Text="Read More" FontSize="12" TextColor="DarkGray"/>
+        </Grid>
+        <Image Grid.Row="1" VerticalOptions="Start" HorizontalOptions="Start" Margin="30,-50,0,0" Source="photo" HeightRequest="80" WidthRequest="80" Aspect="AspectFill"/>
+        <Grid Grid.Row="2" BackgroundColor="LightGray" HeightRequest="50">
+
         </Grid>
     </Grid>
 </ContentPage>
