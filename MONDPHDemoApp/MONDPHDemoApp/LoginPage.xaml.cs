@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AppCenter.Analytics;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,10 @@ namespace MONDPHDemoApp
 
         private async Task Button_Clicked(object sender, EventArgs e)
         {
+            Analytics.TrackEvent("Navigation", new Dictionary<string, string> {
+                { "ToPage", "HomePage" }
+            });
+
             await Navigation.PushAsync(new MainPage());
         }
     }
