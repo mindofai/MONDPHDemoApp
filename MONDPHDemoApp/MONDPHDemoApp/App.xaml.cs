@@ -22,9 +22,10 @@ namespace MONDPHDemoApp
         protected override void OnStart()
         {
             // Handle when your app starts
-            AppCenter.Start("android=b1592e44-c1f4-46c0-91e8-2cc6aaa6c9a3;" + "uwp={Your UWP App secret here};" +
-                   "ios={Your iOS App secret here}",
-                   typeof(Analytics), typeof(Crashes));
+            AppCenter.Start("android=e64af8e3-0f67-4991-a0bf-bead359bd409;" +
+                  "uwp={Your UWP App secret here};" +
+                  "ios={Your iOS App secret here}",
+                  typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
