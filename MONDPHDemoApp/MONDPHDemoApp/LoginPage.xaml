@@ -1,8 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MONDPHDemoApp.LoginPage">
-    <Grid>
-        <Button x:Name="myButton" Clicked="Button_Clicked" Text="Click me"/>
-    </Grid>
+             x:Class="MONDPHDemoApp.LoginPage" BackgroundColor="#4c4cff">
+    <StackLayout VerticalOptions="End">
+        <Button x:Name="emailBtn" BackgroundColor="Gray" Clicked="Button_Clicked" Text="Log in" VerticalOptions="Center" HorizontalOptions="Center" Margin="10"/>
+        <Button x:Name="facebookBtn" BackgroundColor="#3b5998" Clicked="Button_Clicked1" Text="Login using Facebook" VerticalOptions="Center" HorizontalOptions="Center" Margin="10"/>
+        <Button x:Name="microsoftBtn" BackgroundColor="#7cbb00" Clicked="Button_Clicked2" Text="Login using Microsoft" VerticalOptions="Center" HorizontalOptions="Center" Margin="10"/>
+        <Button x:Name="twitterBtn" BackgroundColor="#00aced" Clicked="Button_Clicked3" Text="Login using Twitter" VerticalOptions="Center" HorizontalOptions="Center" Margin="10"/>
+    </StackLayout>
 </ContentPage>
