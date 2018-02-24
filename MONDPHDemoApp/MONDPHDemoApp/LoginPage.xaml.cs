@@ -1,4 +1,4 @@
-﻿using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Analytics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,8 +20,35 @@ namespace MONDPHDemoApp
 
         private async Task Button_Clicked(object sender, EventArgs e)
         {
-            Analytics.TrackEvent("Navigation", new Dictionary<string, string> {
-                { "ToPage", "HomePage" }
+            Analytics.TrackEvent("Login", new Dictionary<string, string> {
+                { "Account", "Email" }
+            });
+
+            await Navigation.PushAsync(new MainPage());
+        }
+
+        private async Task Button_Clicked1(object sender, EventArgs e)
+        {
+            Analytics.TrackEvent("Login", new Dictionary<string, string> {
+                { "Account", "Microsoft" }
+            });
+
+            await Navigation.PushAsync(new MainPage());
+        }
+
+        private async Task Button_Clicked2(object sender, EventArgs e)
+        {
+            Analytics.TrackEvent("Login", new Dictionary<string, string> {
+                { "Account", "Facebook" }
+            });
+
+            await Navigation.PushAsync(new MainPage());
+        }
+
+        private async Task Button_Clicked3(object sender, EventArgs e)
+        {
+            Analytics.TrackEvent("Login", new Dictionary<string, string> {
+                { "Account", "Twitter" }
             });
 
             await Navigation.PushAsync(new MainPage());
